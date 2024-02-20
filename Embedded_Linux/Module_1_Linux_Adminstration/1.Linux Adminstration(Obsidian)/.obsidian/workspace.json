@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Process Management Stack.md",
+                "file": "4. Filesystem Stack.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Process Management Stack.md",
+                "file": "4. Filesystem Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Process Management Stack.md",
+                "file": "4. Filesystem Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Process Management Stack.md"
+                "file": "4. Filesystem Stack.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "beaf39829f7e685d",
   "lastOpenFiles": [
-    "Images/Process management illustration components.png",
     "3. Process Management Stack.md",
+    "Images/Process management illustration components.png",
     "Images",
     "2. System Call Interface.md",
     "Linux_system_layered_architecture.canvas",
