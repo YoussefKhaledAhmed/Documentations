@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"177a0d7d1210dcb9","type":"text","text":"Embedded bare metal:","x":-240,"y":140,"width":400,"height":60,"color":"6"},
+		{"id":"5c9a8e164fff576c","type":"text","text":"Embedded Linux:","x":505,"y":140,"width":400,"height":60,"color":"6"},
+		{"id":"a61b2746464a30a4","type":"file","file":"Embedded linux diagram.png","x":505,"y":279,"width":399,"height":365},
+		{"id":"c2fd94c2b2411a37","type":"file","file":"Embedded bare metal diagram.png","x":-240,"y":279,"width":400,"height":364},
+		{"id":"fa415d33665e8c34","type":"text","text":"**Difference between embedded bare metal and embedded linux:** ","x":60,"y":-40,"width":540,"height":60,"color":"4"},
+		{"id":"c2785238b6c5e178","type":"text","text":"**Linux layered architecture:**","x":-240,"y":720,"width":1144,"height":720,"color":"3"},
+		{"id":"1fc873be25a0fdce","type":"text","text":"# <u><b>Command:</b></u>\n## <i><b><u>Description:</u></b></i>\nthere are two descriptions **(note: -r means recursive where it usage with cp command means copy all the contents that exist in the first directory in the second directory)**\n### 1.\n![[Pasted image 20240203020540.png]]\n\n### 2.\n![[Pasted image 20240203021333.png]]\n\n**(Note: [ ] these square brackets mean that it's optional to whether use options or arguments which means that it's not               mandatory to use them)**\n","x":-242,"y":2560,"width":922,"height":840,"color":"5"},
+		{"id":"969b2c758ab13c7b","type":"file","file":"Linux layered architecture_1.png","x":-180,"y":860,"width":428,"height":540},
+		{"id":"ef8aa15c64277044","type":"file","file":"Linux layered architecture_2.png","x":440,"y":860,"width":427,"height":540},
+		{"id":"4648a419e309bb78","type":"text","text":"## **<u>1. User space:</u>**\n### a. <u><i>Definition:</i></u>\nGeneral purpose layer for user preferences.\n\n## **<u>2. Kernel space:</u>**\n### a. <i><u>Definition:</u></i>\nit is the layer that abstracts the user space from the hardware \n### b. <u><i>Functionalities:</i></u>\n1. Abstract the applications in the user space from the hardware.\n2. Provide set of functionalities to the application developers.\n### c. <u><i>Components:</i></u>\n","x":-242,"y":1500,"width":1120,"height":1020,"color":"6"},
+		{"id":"fba0901292144926","type":"file","file":"Kernel internal components diagram.png","x":3,"y":2020,"width":630,"height":455}
+	],
+	"edges":[
+		{"id":"0dbae4932ee53bcb","fromNode":"fa415d33665e8c34","fromSide":"bottom","toNode":"177a0d7d1210dcb9","toSide":"top"},
+		{"id":"a10fb621a8a0d721","fromNode":"fa415d33665e8c34","fromSide":"bottom","toNode":"5c9a8e164fff576c","toSide":"top"},
+		{"id":"6a628833b45a63ff","fromNode":"177a0d7d1210dcb9","fromSide":"bottom","toNode":"c2fd94c2b2411a37","toSide":"top","label":"Zoom in"},
+		{"id":"879e37751713e858","fromNode":"5c9a8e164fff576c","fromSide":"bottom","toNode":"a61b2746464a30a4","toSide":"top","label":"Zoom in"},
+		{"id":"0a0c7b421a11f786","fromNode":"969b2c758ab13c7b","fromSide":"right","toNode":"ef8aa15c64277044","toSide":"left","label":"change"}
+	]
+}
