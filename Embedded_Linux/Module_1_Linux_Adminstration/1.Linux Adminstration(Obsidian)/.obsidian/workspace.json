@@ -148,6 +148,9 @@
   },
   "active": "beaf39829f7e685d",
   "lastOpenFiles": [
+    "Images/Process management illustration components.png",
+    "3. Process Management Stack.md",
+    "Images",
     "2. System Call Interface.md",
     "Linux_system_layered_architecture.canvas",
     "9. Module Graduation Project.md",
@@ -156,10 +159,9 @@
     "6. Network Stack.md",
     "5. Terminal & Shell Scripting.md",
     "4. Filesystem Stack.md",
-    "3. Process Management Stack.md",
     "1. Linux System Architecture.md",
-    "Embedded bare metal diagram.png",
-    "Kernel internal components diagram.png",
+    "Images/Embedded bare metal diagram.png",
+    "Images/Kernel internal components diagram.png",
     "Welcome.md"
   ]
 }
