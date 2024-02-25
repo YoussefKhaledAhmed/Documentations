@@ -1,31 +1,19 @@
 {
   "main": {
-    "id": "a736f068ffccf7da",
+    "id": "5930416b2f5080a7",
     "type": "split",
     "children": [
       {
-        "id": "1746008517a51948",
+        "id": "e4fe89154f33a9ed",
         "type": "tabs",
         "children": [
           {
-            "id": "5bc8db8e86fa84a2",
+            "id": "25da6b5674cd98d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Filesystem Stack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fedc77fe1bb2d4df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6. Network Stack.md",
+                "file": "RTOS_docs/2. RTOS terminologies and building blocks.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "814bded47916f86f",
+    "id": "84c4a68bfaa5abb5",
     "type": "split",
     "children": [
       {
-        "id": "027563408887e38d",
+        "id": "25ed0018ae30ca26",
         "type": "tabs",
         "children": [
           {
-            "id": "e8b038a6ebe5a884",
+            "id": "5720334f67b91a8e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +43,7 @@
             }
           },
           {
-            "id": "31901733a3591b5f",
+            "id": "7012dd273eb1e110",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -70,7 +58,7 @@
             }
           },
           {
-            "id": "e28289a19e6eb216",
+            "id": "96ab67c05de6efd0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 200
   },
   "right": {
-    "id": "8a1623c1cc5ca5c2",
+    "id": "64c1f3e041632c19",
     "type": "split",
     "children": [
       {
-        "id": "53d6062d06f5f918",
+        "id": "7a218ac37e46886a",
         "type": "tabs",
         "children": [
           {
-            "id": "675b47d223aaac8b",
+            "id": "91b85aabe532a073",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Filesystem Stack.md",
+                "file": "RTOS_docs/2. RTOS terminologies and building blocks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,19 +97,19 @@
             }
           },
           {
-            "id": "af13d15c96dba356",
+            "id": "98c99123f218e7ec",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Filesystem Stack.md",
+                "file": "RTOS_docs/2. RTOS terminologies and building blocks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "2bb0610aa583fff1",
+            "id": "66ad53c3631ce7c1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,12 +120,12 @@
             }
           },
           {
-            "id": "f5da74e6efd23be7",
+            "id": "fd0d1d59e2db3216",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Filesystem Stack.md"
+                "file": "RTOS_docs/2. RTOS terminologies and building blocks.md"
               }
             }
           }
@@ -158,29 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5bc8db8e86fa84a2",
+  "active": "25da6b5674cd98d9",
   "lastOpenFiles": [
-    "6. Network Stack.md",
-    "4. Filesystem Stack.md",
-    "3. Process Management Stack.md",
-    "1. Linux System Architecture.md",
-    "2. System Call Interface.md",
-    "Images/result_of_gdb_session.png",
-    "Images/generated_core_dump_file.png",
-    "Images/result_of_ABRT_signal.png",
-    "Images/ABRT_signal.png",
-    "Images/some_signals.png",
-    "Images/top_view_of_the_running_processes.png",
-    "Images/running_process.png",
-    "Images/signals_actions.png",
-    "Images/Pasted image 20240222003759.png",
-    "Images/Pasted image 20240222003757.png",
-    "Images",
-    "Linux_system_layered_architecture.canvas",
-    "9. Module Graduation Project.md",
-    "8. Monitoring Linux.md",
-    "7. Access Control & User Management.md",
-    "5. Terminal & Shell Scripting.md",
+    "RTOS_docs/1. introduction to RTOS.md",
+    "RTOS_docs/2. RTOS terminologies and building blocks.md",
+    "RTOS_docs/images/illustrative diagram (not standard).png",
+    "RTOS_docs/images/ARM_CIMSIS_diagram.png",
+    "RTOS_docs/images/AUTOSAR_diagram.png",
+    "RTOS_docs/images",
+    "RTOS_docs/3. Introduction to freeRTOS.md",
+    "RTOS_docs/1. Introduction to RTOS.md",
+    "RTOS_project",
+    "RTOS_docs",
     "Welcome.md"
   ]
 }
