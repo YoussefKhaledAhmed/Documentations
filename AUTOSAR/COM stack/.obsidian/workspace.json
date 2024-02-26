@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "1dbd70fe552cc38a",
+    "type": "split",
+    "children": [
+      {
+        "id": "210e5461eeaee1c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "512e6cd4d0acca2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COM stack based on CAN/COM stack based on CAN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6052948ce1be88eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "08d93abbe476d339",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd9a198e35bdf544",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d118f8dc106dd5dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "68083e768321690a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9b0929247e52b3ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8db208cd77e6b8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6c0c21efb5245f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "COM stack based on CAN/COM stack based on CAN.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c8f38454db72ddd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "COM stack based on CAN/COM stack based on CAN.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "46ccb71f4b841985",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe36e270d70904f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "COM stack based on CAN/COM stack based on CAN.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "512e6cd4d0acca2e",
+  "lastOpenFiles": [
+    "Mixed_transmission_mode.png",
+    "Direct_transmission_mode.png",
+    "Periodic_transmission_mode.png",
+    "Periodic_transmission_mode.png",
+    "Periodic_transmission_mode.png",
+    "COM stack based on CAN/COM stack based on CAN.md",
+    "Sending_PDU_BlockDiagram.png",
+    "Pasted image 20240226015511.png",
+    "Pasted image 20240226015430.png",
+    "Pasted image 20240226015417.png",
+    "Signal_signalGroup.png",
+    "PDU_PCI_SDU.png",
+    "Welcome.md",
+    "COM stack based on CAN"
+  ]
+}
