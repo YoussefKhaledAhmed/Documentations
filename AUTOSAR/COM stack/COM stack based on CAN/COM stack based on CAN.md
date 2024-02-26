@@ -6,7 +6,7 @@
 
 ![[CAN_network.png]]
 ***COM stack*** is used to communicate between the ECUs so, lets consider the following scenarios:
-1. the <b><u><i>Master</i></u></b> ECU is sending a ***==periodic==*** message that contains the following ***==signals==***: kilometers, Speed, time stamp to all the other ECUs where these ECUs use that data when taking a snapshot if any problem happens, so, for that we need the COM stack.
+1. the <b><u><i>Master</i></u></b> ECU is sending a ***==periodic==*** message that contains the following ***==signals==***: kilometers, Speedand time stamp to all the other ECUs where these ECUs use that data when taking a snapshot if any problem happens, so, for that we need the COM stack.
 2. <b><u><i>ECU_1</i></u></b> sends this data that contains the gear state to <b><u><i>ECU_2</i></u></b> and according to the gear state if it's ***R (Reverse state)*** the camera should be functioning to let the user see what is behind the car.
 there are more scenarios of course than those 2, so, COM stack is one of the most important stacks in the CAR.
 there are more than one type of COM stack as follows:
@@ -65,8 +65,28 @@ in this diagram the COM stack architecture based on ***CAN*** where we can split
 - <u><i><b>Mixed</b></u></i>: it is a mix of the 2 modes above where the ***Com module*** sends the PDU every                              configured period and also the ***App*** through the ***RTE*** tells the ***Com module*** to send this              PDU at a certain time, so, the ***Com module*** is responsible of sending this PDU in the                    configured periods and also if the ***App*** wants to send it in any time other than the                       period that is configured in the ***Com module*** it will contact the ***Com module*** through                  the ***RTE*** and tells it to send the PDU. 
 		![[Mixed_transmission_mode.png]]
 ##### b. <b><u><i>Transfer property (of the signal):</i></u></b>
-- <u><i><b>Triggered</b></u></i>:
-- <u><i><b>Triggered on change</b></u></i>:
+- <u><i><b>Triggered</b></u></i>: if a signal is configured as triggered then this means that if there is a **PDU** that has                    this signal that is configured as ***triggered*** and the ***App*** sends this signal to the                              ***Com module*** then the whole ***PDU*** will be transmitted from the ***Com module*** to the                     ***PduR*** ==immediately== regardless of the other signals in that ***PDU***.
+- <u><i><b>Triggered on change</b></u></i>: if a signal is configured as triggered-on-change signal this means that if                                       there is a ***PDU*** that has this signal that is configured as ***triggered-on-                                           change*** and the ***App*** sends this signal to the ***Com module*** then the                                               whole ***PDU*** will be transmitted from the ***Com module*** to the ***PduR*** iff ***==the==                                      ==value of this signal has changed from the last time it was sent==***.
+	an example on <b><u><i>triggered</i></u></b> and <b><u><i>triggered-on-change</i></u></b>:
+	
+	![[triggered_triggered_on_change_signals.png]]
+	if we have a **PDU** as shown in the pic. above where this **PDU** consists of 3 signals: 
+		- <b><u><i>Signal #1</i></u></b>: triggered signal.
+		- <b><u><i>Signal #2</i></u></b>: triggered signal.
+		- <b><u><i>Signal #3</i></u></b>: triggered-on-change signal.
+	so, lets consider the following 4 scenarios:
+	<b><u>First:</u></b>
+	![[sending_triggered_signal_1.png]]
+	as shown in this pic. ***==Signal #1==*** is been sent from ***APP_1*** to the ***Com module*** through the ***RTE***  and since ***==Signal #1==*** is ***==triggered signal==*** then this ***PDU*** should be sent immediately from the ***Com module*** to the ***PduR*** regardless the value of this signal is been changed from the last time it was sent at and regardless of whether the other signals are sent or not.
+	<b><u>Second:</u></b>
+	![[Sending_triggered_signal_2.png]]
+	as shown in this pic. ***==Signal #2==*** is been sent from ***APP_1*** to the ***Com module*** through the ***RTE***  and since ***==Signal #2==*** is ***==triggered signal==*** then this ***PDU*** should be sent immediately from the ***Com module*** to the ***PduR*** regardless the value of this signal is been changed from the last time it was sent at and regardless of whether the other signals are sent or not.
+	<b><u>Third:</u></b>
+	![[Sending_triggered_on_change_signal_changed.png]]
+	as shown in this pic. ***==Signal #3==*** is been sent from ***APP_1*** to the ***Com module*** through the ***RTE***  and since ***==Signal #3==*** is ***==triggered-on-change signal and its value is being changed from the last time it was sent (i.e., its value now equal 10 and its previous value was 0 this means its value changed)==*** then this ***PDU*** should be sent immediately from the ***Com module*** to the ***PduR*** regardless of whether the other signals are sent or not.
+	<b><u>Forth:</u></b>
+	![[Sending_triggered_on_change_signal_unchanged.png]]
+	as shown in this pic. ***==Signal #3==*** is been sent from ***APP_1*** to the ***Com module*** through the ***RTE***  and since ***==Signal #3==*** is ***==triggered-on-change signal and its value isn't been changed from the last time it was sent (i.e., its value now equal 10 and its previous value was also 10 this means its value is the same)==*** then this ***PDU*** <b><i><u>shouldn't</u></i></b> be sent from the ***Com module*** to the ***PduR*** and this ***PDU*** should <b><i><u>wait</u></i></b> till one of the other triggered signals (i.e., signal #1 or signal #2) is sent or this triggered-on-change signal (i.e., signal #3) is sent again but with different value.
 - <u><i><b>Pending</b></u></i>:
 
 # 5. <b><u>Full pic. from the app to the physical bus (Sending):</u></b>
