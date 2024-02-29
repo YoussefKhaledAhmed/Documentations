@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Filesystem Stack.md",
+                "file": "3. Process Management Stack.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "98858edbdb906727",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.8"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Filesystem Stack.md",
+                "file": "3. Process Management Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Filesystem Stack.md",
+                "file": "3. Process Management Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Filesystem Stack.md"
+                "file": "3. Process Management Stack.md"
               }
             }
           }
@@ -157,13 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8b038a6ebe5a884",
+  "active": "5bc8db8e86fa84a2",
   "lastOpenFiles": [
-    "Untitled",
     "5. Terminal & Shell Scripting.md",
+    "bash_script_file_type_after_shebang.png",
+    "path_to_bash_executable.png",
+    "bash_script_file_printing_type.png",
+    "4. Filesystem Stack.md",
+    "Untitled",
     "7. Access Control & User Management.md",
     "3. Process Management Stack.md",
-    "4. Filesystem Stack.md",
     "6. Network Stack.md",
     "1. Linux System Architecture.md",
     "2. System Call Interface.md",
@@ -174,9 +166,6 @@
     "Images/some_signals.png",
     "Images/top_view_of_the_running_processes.png",
     "Images/running_process.png",
-    "Images/signals_actions.png",
-    "Images/Pasted image 20240222003759.png",
-    "Images/Pasted image 20240222003757.png",
     "Images",
     "Linux_system_layered_architecture.canvas",
     "9. Module Graduation Project.md",
